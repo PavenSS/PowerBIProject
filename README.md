@@ -60,7 +60,6 @@ Key elements of this project:
     ```bash
    git init 
 
-
 ## ⚙️ Azure VM Setup
 1. Create a Windows Virtual Machine (VM) on Azure.
     Go to Azure Portal -> Virtual Machines -> Add.
@@ -90,16 +89,16 @@ If the ZIP contains CSV or text files, extract them and load them into Power BI 
 ## 🧩 Creating a Data Model
 ### Date Table
 Power BI allows you to automatically create a date table by going to Modeling -> New Table and entering the DAX formula for a Date table.
-```DAX
-DateTable = CALENDAR(DATE(2020,1,1), DATE(2025,12,31))
+    ```DAX
+    DateTable = CALENDAR(DATE(2020,1,1), DATE(2025,12,31))
 
 ### Star Schema Model
 Design a star schema to organize your data model:
 
 ### Measures Table
 Create a Measures Table to store all your DAX calculations.
-```DAX
-Total Sales = SUM(Sales[Amount])
+    ```DAX
+    Total Sales = SUM(Sales[Amount])
 
 ### Hierarchies
 In the Model View, create hierarchies by right-clicking on the field (e.g., Date) and selecting Create Hierarchy.
